@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mana Veg Foods & Catering | Premium Vegetarian Cuisine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+        .brand-green { color: #4DB748; }
+        .bg-brand-green { background-color: #4DB748; }
+        .brand-olive { color: #655C32; }
+        .border-brand-olive { border-color: #655C32; }
+        .brand-red { color: #C1272D; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-[#4DB748] selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 left-0 border-b border-stone-200/60 bg-white/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo Area -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="https://muhammedadnanv.github.io/manaveg/logo.png" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png'; this.style.display='none'" alt="Mana Veg Logo" class="h-12 w-12 object-contain hidden"> 
+                <!-- Using the logo visually via CSS/Structure as per prompt image -->
+                <div class="h-12 w-12 rounded-full border-2 border-[#655C32] bg-white flex items-center justify-center overflow-hidden shrink-0">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Mana Logo" class="w-full h-full object-cover scale-110">
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-xl font-semibold tracking-tight text-[#4DB748]">MANA VEG</span>
+                    <span class="text-xs font-medium tracking-widest text-[#C1272D] uppercase">Foods & Catering</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-8 text-lg font-medium text-stone-600">
+                <a href="#home" class="hover:text-[#4DB748] transition-colors">Home</a>
+                <a href="#menu" class="hover:text-[#4DB748] transition-colors">Menu</a>
+                <a href="#locations" class="hover:text-[#4DB748] transition-colors">Locations</a>
+                <a href="#catering" class="hover:text-[#4DB748] transition-colors">Catering</a>
+            </div>
+
+            <!-- CTA -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="https://wa.me/919562437474" target="_blank" class="flex items-center gap-2 bg-[#4DB748] hover:bg-[#3da039] text-white px-5 py-2.5 rounded-full text-base font-medium transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
+                    <i data-lucide="message-circle" class="w-4 h-4 stroke-[1.5]"></i>
+                    <span>Order Now</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button (Visual Only) -->
+            <button class="md:hidden text-stone-600">
+                <i data-lucide="menu" class="w-7 h-7 stroke-[1.5]"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Darkened overlay on a food background -->
+            <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?q=80&w=2070&auto=format&fit=crop" alt="Kerala Vegetarian Food" class="w-full h-full object-cover opacity-100">
+            <div class="absolute inset-0 bg-gradient-to-r from-stone-900/90 to-stone-900/40"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-white">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#4DB748]/20 border border-[#4DB748]/30 backdrop-blur-sm mb-6">
+                    <span class="flex h-2 w-2 rounded-full bg-[#4DB748]"></span>
+                    <span class="text-sm font-medium text-[#4DB748] uppercase tracking-wide">Pure Authentic Taste</span>
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-semibold tracking-tight leading-[1.1] mb-6">
+                    Authentic Kerala <br>
+                    <span class="text-[#4DB748]">Home-made</span> Delicacies.
+                </h1>
+                <p class="text-xl lg:text-2xl text-stone-200 mb-10 font-light leading-relaxed max-w-2xl">
+                    Experience the clean, fresh taste of Mana Veg. Serving Kothamangalam, Koyilandy, and Kozhikode with love.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/919562437474" class="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl text-lg font-medium transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                        <i data-lucide="message-circle" class="w-5 h-5 stroke-[1.5]"></i>
+                        <span>WhatsApp Booking</span>
+                    </a>
+                    <a href="tel:+919562437474" class="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl text-lg font-medium transition-all">
+                        <i data-lucide="phone" class="w-5 h-5 stroke-[1.5]"></i>
+                        <span>Call +91 95624 37474</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Philosophy -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-[#4DB748]/20 to-transparent rounded-3xl blur-2xl"></div>
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=80&w=2070&auto=format&fit=crop" alt="Fresh Veg Food" class="relative rounded-2xl shadow-2xl border border-stone-100 w-full object-cover h-[500px]">
+                </div>
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-stone-900 mb-6">
+                        Fresh. Clean. <span class="text-[#4DB748]">Pure Veg.</span>
+                    </h2>
+                    <blockquote class="text-2xl font-light text-stone-600 mb-8 border-l-4 border-[#655C32] pl-6 italic">
+                        “For home-made meals, visit Mana Veg (Kothamangalam & Koyilandy). Try something vegan today.”
+                    </blockquote>
+                    <p class="text-lg text-stone-500 mb-8 leading-relaxed">
+                        We believe food should be medicine for the body and a treat for the soul. At Mana Veg Foods & Catering, we specialize in authentic Kerala-style vegetarian and vegan dishes prepared with the hygiene and love of a home kitchen.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-start gap-3">
+                            <div class="p-2 bg-green-50 rounded-lg text-[#4DB748]">
+                                <i data-lucide="leaf" class="w-6 h-6 stroke-[1.5]"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-stone-900">100% Veg & Vegan</h3>
+                                <p class="text-base text-stone-500">Pure plant-based options.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="p-2 bg-red-50 rounded-lg text-[#C1272D]">
+                                <i data-lucide="heart" class="w-6 h-6 stroke-[1.5]"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-stone-900">Home-made Style</h3>
+                                <p class="text-base text-stone-500">No artificial additives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Menu -->
+    <section id="menu" class="py-24 bg-stone-50 border-y border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <span class="text-[#C1272D] font-medium tracking-wider uppercase text-sm">Our Offerings</span>
+            <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-stone-900 mt-2">Daily Menu & Specials</h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-8 border border-stone-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-[#4DB748]/10 rounded-xl flex items-center justify-center text-[#4DB748] mb-6 group-hover:bg-[#4DB748] group-hover:text-white transition-colors">
+                    <i data-lucide="utensils-crossed" class="w-6 h-6 stroke-[1.5]"></i>
+                </div>
+                <h3 class="text-2xl font-medium text-stone-900 mb-3">Daily Meals</h3>
+                <p class="text-lg text-stone-500 mb-6">Authentic Kerala Sadhya, rice meals, and curries prepared fresh every single day.</p>
+                <a href="https://wa.me/919562437474?text=Hi,%20I%20would%20like%20to%20know%20today's%20menu" class="inline-flex items-center gap-2 text-[#4DB748] font-medium hover:gap-3 transition-all">
+                    Ask Today's Menu <i data-lucide="arrow-right" class="w-4 h-4 stroke-[1.5]"></i>
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-8 border border-stone-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-[#C1272D]/10 rounded-xl flex items-center justify-center text-[#C1272D] mb-6 group-hover:bg-[#C1272D] group-hover:text-white transition-colors">
+                    <i data-lucide="party-popper" class="w-6 h-6 stroke-[1.5]"></i>
+                </div>
+                <h3 class="text-2xl font-medium text-stone-900 mb-3">Event Catering</h3>
+                <p class="text-lg text-stone-500 mb-6">Premium catering for weddings, housewarmings, and corporate events. Pure vegetarian.</p>
+                <a href="#catering" class="inline-flex items-center gap-2 text-[#C1272D] font-medium hover:gap-3 transition-all">
+                    Get a Quote <i data-lucide="arrow-right" class="w-4 h-4 stroke-[1.5]"></i>
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl p-8 border border-stone-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-[#655C32]/10 rounded-xl flex items-center justify-center text-[#655C32] mb-6 group-hover:bg-[#655C32] group-hover:text-white transition-colors">
+                    <i data-lucide="package" class="w-6 h-6 stroke-[1.5]"></i>
+                </div>
+                <h3 class="text-2xl font-medium text-stone-900 mb-3">Bulk Orders</h3>
+                <p class="text-lg text-stone-500 mb-6">Ordering for office or a small gathering? We provide neat packaging for bulk requirements.</p>
+                <a href="tel:+919562437474" class="inline-flex items-center gap-2 text-[#655C32] font-medium hover:gap-3 transition-all">
+                    Call to Book <i data-lucide="arrow-right" class="w-4 h-4 stroke-[1.5]"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Highlight -->
+    <section id="catering" class="py-24 bg-stone-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-[#4DB748] rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-96 h-96 bg-[#C1272D] rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl lg:text-5xl font-semibold tracking-tight mb-6">Planning an Event?</h2>
+            <p class="text-xl lg:text-2xl text-stone-300 mb-10 font-light">
+                From intimate gatherings to grand celebrations, let Mana Veg handle the food while you handle the guests. Customized menus available.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/919562437474?text=Hello,%20I%20want%20to%20enquire%20about%20catering%20services." class="bg-[#4DB748] hover:bg-[#3da039] text-white px-8 py-4 rounded-xl text-lg font-medium transition-all shadow-lg hover:shadow-[#4DB748]/30">
+                    Get Catering Quote
+                </a>
+                <a href="tel:+919562437474" class="bg-transparent border border-stone-600 hover:border-white text-white px-8 py-4 rounded-xl text-lg font-medium transition-all">
+                    Call Manager
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations -->
+    <section id="locations" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-stone-900">Visit Our Branches</h2>
+                <p class="text-lg text-stone-500 mt-4">Available across three convenient locations.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Location 1 -->
+                <div class="flex flex-col p-6 rounded-2xl bg-stone-50 border border-stone-100 hover:border-[#4DB748]/30 transition-colors">
+                    <div class="mb-4 text-[#4DB748]">
+                        <i data-lucide="map-pin" class="w-8 h-8 stroke-[1.5]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-stone-900 mb-2">Kothamangalam</h3>
+                    <p class="text-lg text-stone-600 mb-1">Meppad Tower</p>
+                    <p class="text-lg text-stone-600 mb-6">Kothamangalam, India</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Meppad+Tower+Kothamangalam" target="_blank" class="mt-auto text-sm font-medium text-stone-400 hover:text-[#4DB748] flex items-center gap-1">
+                        View on Map <i data-lucide="external-link" class="w-3 h-3"></i>
+                    </a>
+                </div>
+
+                <!-- Location 2 -->
+                <div class="flex flex-col p-6 rounded-2xl bg-stone-50 border border-stone-100 hover:border-[#4DB748]/30 transition-colors">
+                    <div class="mb-4 text-[#4DB748]">
+                        <i data-lucide="map-pin" class="w-8 h-8 stroke-[1.5]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-stone-900 mb-2">Koyilandy</h3>
+                    <p class="text-lg text-stone-600 mb-1">Mana Veg</p>
+                    <p class="text-lg text-stone-600 mb-6">Koyilandy, India</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Mana+Veg+Koyilandy" target="_blank" class="mt-auto text-sm font-medium text-stone-400 hover:text-[#4DB748] flex items-center gap-1">
+                        View on Map <i data-lucide="external-link" class="w-3 h-3"></i>
+                    </a>
+                </div>
+
+                <!-- Location 3 -->
+                <div class="flex flex-col p-6 rounded-2xl bg-stone-50 border border-stone-100 hover:border-[#4DB748]/30 transition-colors">
+                    <div class="mb-4 text-[#4DB748]">
+                        <i data-lucide="map-pin" class="w-8 h-8 stroke-[1.5]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-stone-900 mb-2">Kozhikode</h3>
+                    <p class="text-lg text-stone-600 mb-1">Ulliyeri 19</p>
+                    <p class="text-lg text-stone-600 mb-6">Ulliyeri, Kozhikode, India</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Ulliyeri+19+Kozhikode" target="_blank" class="mt-auto text-sm font-medium text-stone-400 hover:text-[#4DB748] flex items-center gap-1">
+                        View on Map <i data-lucide="external-link" class="w-3 h-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 border-b border-stone-800 pb-12 mb-12">
+            
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-3 mb-6">
+                     <div class="h-10 w-10 rounded-full border border-[#655C32] bg-stone-100 flex items-center justify-center overflow-hidden shrink-0">
+                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Mana Logo" class="w-full h-full object-cover scale-125">
+                    </div>
+                    <span class="text-white text-xl font-semibold tracking-tight">MANA VEG</span>
+                </div>
+                <p class="text-lg leading-relaxed max-w-md mb-6">
+                    Authentic vegetarian cuisine prepared with traditional recipes. Catering services available for all occasions.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://www.facebook.com/p/MANA-VEG-Foods-Catering-100063867918267/" target="_blank" class="text-white hover:text-[#4DB748] transition-colors">
+                        <i data-lucide="facebook" class="w-6 h-6 stroke-[1.5]"></i>
+                    </a>
+                    <a href="https://instagram.com/mana_veg" target="_blank" class="text-white hover:text-[#C1272D] transition-colors">
+                        <i data-lucide="instagram" class="w-6 h-6 stroke-[1.5]"></i>
+                    </a>
+                    <a href="https://wa.me/919562437474" target="_blank" class="text-white hover:text-[#25D366] transition-colors">
+                        <i data-lucide="message-circle" class="w-6 h-6 stroke-[1.5]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-medium mb-6">Contact Us</h4>
+                <ul class="space-y-4 text-lg">
+                    <li>
+                        <a href="tel:+919562437474" class="hover:text-white transition-colors flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i> +91 95624 37474
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:manavegfoods@gmail.com" class="hover:text-white transition-colors flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i> manavegfoods@gmail.com
+                        </a>
+                    </li>
+                    <li class="flex items-start gap-2">
+                         <i data-lucide="clock" class="w-4 h-4 mt-1.5"></i> 
+                         <span>Open Daily: <br>8:00 AM - 10:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-medium mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-lg">
+                    <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="#menu" class="hover:text-white transition-colors">Menu</a></li>
+                    <li><a href="#catering" class="hover:text-white transition-colors">Catering</a></li>
+                    <li><a href="https://instagram.com/mana_veg" class="hover:text-white transition-colors">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm">
+            <p>&copy; 2024 Mana Veg Foods & Catering. All rights reserved.</p>
+            <p class="mt-2 md:mt-0">Taste of Kerala.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
